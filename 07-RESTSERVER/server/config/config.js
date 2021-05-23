@@ -35,3 +35,8 @@ process.env.SEED_TOKEN = process.env.SEED_TOKEN || 'este-es-el-seed-desarrollo';
 
 
 process.env.URLDB = urlDB;
+
+// ============================
+// Google Client ID
+// ============================
+process.env.CLIENT_ID = process.env.CLIENT_ID || '193998435901-rmcipvk87tqifceh29cjgaqvibf61shl.apps.googleusercontent.com';
