@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { verificaToken } = require('../middlewares/autenticacion');
+const { verificaToken } = require('../middlerwares/autenticacion')
 
 
 let app = express();

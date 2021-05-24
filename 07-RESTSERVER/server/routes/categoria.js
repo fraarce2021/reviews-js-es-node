@@ -1,6 +1,6 @@
 const express = require('express');
 
-let { verificaToken, verificaAdmin_Role } = require('../middlewares/autenticacion');
+const { verificaToken, verificaAdminRole } = require('../middlerwares/autenticacion')
 
 let app = express();
 
@@ -150,7 +150,7 @@ app.put('/categoria/:id', verificaToken, (req, res) => {
 // ============================
 // Mostrar todas las categorias
 // ============================
-app.delete('/categoria/:id', [verificaToken, verificaAdmin_Role], (req, res) => {
+app.delete('/categoria/:id', [verificaToken, verificaAdminRole], (req, res) => {
     // solo un administrador puede borrar categorias
     // Categoria.findByIdAndRemove
     let id = req.params.id;
